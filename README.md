@@ -1,14 +1,29 @@
-# NetSecurePro Runner Image
+# AIMEDIXAL
 
-Ce dépôt contient une image personnalisée pour les runners GitHub Actions utilisée dans le cadre de la plateforme IA **NetSecurePro**.
+**Description**  
+AIMEDIXAL est une application mobile open-source basée sur l’intelligence artificielle. Elle permet d’analyser les symptômes médicaux et d’assister le diagnostic de manière intelligente et automatisée.
 
-## Contenu
+**Catégorie**  
+Santé, Diagnostic IA, Outils médicaux
 
-- `devcontainer.json` : Configuration pour environnement de développement Docker + VS Code.
-- `Dockerfile` : Définition de l'image runner personnalisée.
-- `requirements.txt` : Dépendances Python.
-- `.github/workflows/build.yml` : Exemple de workflow pour builder une image.
+**Fonctionnalités**  
+- Interface mobile Flutter
+- IA intégrée pour détection automatique
+- Analyse des symptômes en temps réel
+- Téléchargement APK immédiat
 
-## Utilisation
+**Technologies utilisées**  
+- Flutter (mobile)
+- IA (modèle local)
+- HTML/CSS (interface GitHub Pages)
+- QR Code / Teaser vidéo / PDF officiel
 
-Cloner le dépôt et adapter les fichiers selon vos besoins.
+**Auteur**  
+Zoubirou Mohammed Ilyes  
+🔗 ORCID : [https://orcid.org/0009-0007-7571-3178](https://orcid.org/0009-0007-7571-3178)
+
+**Lien**  
+🌐 https://milyes.github.io/AIMEDIXAL/
+
+**Tags**  
+`#IA`, `#Santé`, `#Flutter`, `#OpenSource`, `#DiagnosticIA`
