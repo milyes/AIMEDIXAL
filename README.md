@@ -1,86 +1,72 @@
-# NetSecurePro - Plateforme IA de Sécurité
+# AIMEDIXAL
 
-## 1. Introduction
+AIMEDIXAL est un projet d'intelligence artificielle destiné à l'analyse des symptômes de la maladie de Parkinson et à la détection du diabète à partir de données collectées via des capteurs mobiles.
 
-NetSecurePro est une plateforme IA avancée permettant d'analyser, surveiller et sécuriser les réseaux et appareils connectés. Elle intègre plusieurs modules spécialisés pour la gestion de la cybersécurité et l'analyse des menaces.
+## Description
 
-## 2. Fonctionnalités principales
+Le projet AIMEDIXAL inclut plusieurs modèles d'IA et des outils pour analyser les symptômes de la maladie de Parkinson, ainsi que la détection de symptômes liés au diabète. Il utilise plusieurs technologies telles que Python, Flask, et des modèles d'apprentissage profond pour l'analyse des données.
 
-- **Analyse de réseau WiFi & Bluetooth** : Détection des appareils connectés et analyse des signaux.
-- **Authentification sécurisée** : Utilisation de JWT pour protéger les accès.
-- **Dashboard interactif** : Interface web pour la visualisation des données.
-- **Intégration IA** : Analyse intelligente des comportements suspects.
-- **API REST** : Interaction avec des applications externes.
+### Objectifs :
+- Analyser les tremblements et autres symptômes de la maladie de Parkinson.
+- Détecter les symptômes du diabète à partir des données collectées par des capteurs mobiles.
+- Fournir un tableau de bord interactif pour visualiser les résultats des analyses.
 
-## 3. Architecture du projet
+## Installation
 
-```
-NetSecurePro/
-├── backend/         # API Backend avec FastAPI
-│   ├── main.py      # Serveur FastAPI
-│   ├── auth.py      # Gestion JWT et authentification
-│   ├── database.py  # Connexion et modèles SQLAlchemy
-│   ├── models/      # Modèles de données
-│   ├── routes/      # Routes API
-├── frontend/        # Interface utilisateur (React/Vue.js)
-│   ├── src/
-│   ├── public/
-├── docs/           # Documentation et images
-│   ├── README.md
-│   ├── images/
-├── scripts/        # Scripts d'installation et automatisation
-├── config/         # Fichiers de configuration
-│   ├── settings.py
-│   ├── .env
-└── README.md       # Documentation principale
-```
-
-## 4. Installation
+Pour installer et exécuter le projet, suivez les étapes ci-dessous :
 
 ### Prérequis
+- Python 3.x
+- pip (gestionnaire de paquets Python)
+- Flask
 
-- Python 3.9+
-- Node.js & npm
-- PostgreSQL ou SQLite
+### Étapes d'installation
 
-### Installation du backend
+1. Clonez le repository :
 
-```bash
-git clone https://github.com/votre_repo/NetSecurePro.git
-cd NetSecurePro/backend
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
+    ```bash
+    git clone https://github.com/milyes/AIMEDIXAL.git
+    cd AIMEDIXAL
+    ```
 
-### Installation du frontend
+2. Installez les dépendances :
 
-```bash
-cd NetSecurePro/frontend
-npm install
-npm run dev
-```
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## 5. API et Authentification
+3. Exécutez le projet :
 
-- **Connexion utilisateur** : `/token`
-- **Récupération des logs** : `/logs`
-- **Analyse IA des menaces** : `/ai/analyze`
+    ```bash
+    python3 app.py
+    ```
 
-## 6. Interface et prototypes
+### Dépendances
+- Flask
+- numpy
+- pandas
+- scikit-learn
+- tensorflow (si utilisé pour les modèles IA)
 
-L'interface comprend :
+## Utilisation
 
-- **Dashboard** : Affichage des statistiques et logs.
-- **Gestion des utilisateurs** : Inscription et connexion.
-- **Monitoring en temps réel** : Affichage des connexions suspectes.
+Une fois le projet installé et lancé, ouvrez votre navigateur et accédez à `http://127.0.0.1:5000` pour voir l'interface utilisateur.
 
-*(Ajout d'images explicatives ici)*
+## Contribuer
 
-## 7. Roadmap et évolutions
+Si vous souhaitez contribuer à ce projet, veuillez suivre les étapes suivantes :
 
--
+1. Forkez le repository.
+2. Créez une nouvelle branche (`git checkout -b feature/nouvelle-fonctionnalité`).
+3. Apportez vos modifications.
+4. Faites un commit (`git commit -am 'Ajout d'une nouvelle fonctionnalité'`).
+5. Poussez votre branche (`git push origin feature/nouvelle-fonctionnalité`).
+6. Ouvrez une pull request.
 
----
+## License
 
-🚀 **NetSecurePro, l'IA au service de la cybersécurité !**
+Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
 
+## Auteurs
+
+- **milyes** : Développeur principal
