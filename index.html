@@ -1,20 +1,77 @@
-        <li>L’appli doit afficher ton splash personnalisé et charger le WebView (offline/online)</li>
-    </ol>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AIMEDIXAL — IA Médicale</title>
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; background:#0f172a; color:#e6eef8; }
+    .container { max-width:1000px; margin:32px auto; padding:24px; background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:12px; box-shadow: 0 8px 24px rgba(2,6,23,0.6); }
+    header { display:flex; gap:20px; align-items:center; }
+    .title { font-size:28px; font-weight:700; margin:0; color:#fff; }
+    .subtitle { margin:4px 0 0 0; color:#cfe6ff; }
+    .row { display:flex; gap:20px; flex-wrap:wrap; margin-top:18px; }
+    .card { background:rgba(255,255,255,0.02); padding:18px; border-radius:10px; flex:1 1 320px; }
+    .qr { width:240px; height:240px; border-radius:12px; background:#fff; padding:8px; display:flex; align-items:center; justify-content:center; }
+    a.button { display:inline-block; margin-top:10px; padding:10px 14px; background:#2563eb; color:#fff; border-radius:8px; text-decoration:none; font-weight:600; }
+    footer { margin-top:20px; font-size:13px; color:#9fb8dd; }
+    img.responsive { max-width:100%; height:auto; border-radius:8px; }
+    .meta { font-size:14px; color:#bcd9ff; }
+    .small { font-size:13px; color:#9fb8dd; }
+    @media (max-width:600px){ .qr { width:180px; height:180px; } .title { font-size:22px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div style="flex:1">
+        <h1 class="title">AIMEDIXAL</h1>
+        <div class="subtitle">IA Médicale — Diagnostic Parkinson &amp; Diabète</div>
+        <div class="meta" style="margin-top:10px;">Auteur : <strong>Zoubirou Mohammed Ilyes</strong> — ORCID : <a href="https://orcid.org/0009-0007-7571-3178" target="_blank" style="color:#dbeeff">0009-0007-7571-3178</a></div>
+      </div>
+      <div style="width:160px; text-align:right">
+        <img src="AIMEDIXAL_Promo.png" alt="Promo AIMEDIXAL" class="responsive" style="border-radius:8px; max-height:120px;">
+      </div>
+    </header>
 
-    <h2>🔍 Étape 3 — Vérifier GitHub Pages</h2>
-    <p>Ton site officiel est ici :</p>
-    <a href="https://milyes.github.io/AIMEDIXAL/" class="button" target="_blank">🌐 Accéder à GitHub Pages</a>
+    <div class="row" style="margin-top:22px;">
+      <div class="card">
+        <h3>Présentation</h3>
+        <p class="small">AIMEDIXAL est une plateforme d'intelligence artificielle dédiée à l'analyse des symptômes de la maladie de Parkinson et à la détection du diabète à partir de données de capteurs mobiles. Basée sur Flask et modèles de machine learning, elle fournit un tableau de bord interactif et des diagnostics préliminaires.</p>
+        <h4 style="margin-top:12px">Téléchargements</h4>
+        <p class="small">APK WebView, fiche PDF et code source Flutter sont disponibles dans le dépôt.</p>
+        <a class="button" href="AIMEDIXAL_WebView.apk" download>📱 Télécharger l'APK</a>
+        <a class="button" href="AIMEDIXAL_Presentation.pdf" style="background:#ef4444; margin-left:8px;" download>📄 Télécharger le PDF</a>
+        <div style="margin-top:14px;"><a class="small" href="AIMEDIXAL_FlutterSource.zip" download>🧩 Télécharger le code source Flutter</a></div>
+      </div>
 
-    <h2>⚡ QR Code pour un accès rapide</h2>
-    <div class="qr-code">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/milyes/AIMEDIXAL/releases/latest" alt="QR Code AIMEDIXAL">
-        <p>Scanne pour accéder directement à la release GitHub</p>
+      <div class="card" style="display:flex; flex-direction:column; align-items:center; justify-content:space-between;">
+        <div>
+          <h3 style="text-align:center">Accès rapide</h3>
+          <div class="qr" style="margin:8px auto;">
+            <img src="AIMEDIXAL_QR.png" alt="QR AIMEDIXAL" style="width:100%; height:100%; object-fit:contain; border-radius:6px;">
+          </div>
+          <div style="text-align:center; margin-top:8px;"><a href="https://milyes.github.io/AIMEDIXAL/" target="_blank" class="button">🌐 Ouvrir le site</a></div>
+        </div>
+        <div style="width:100%; margin-top:12px;" class="small">
+          <strong>Usage :</strong> Ce dépôt contient les livrables officiels pour le déploiement. Pour exécuter localement, suivez les instructions du README.
+        </div>
+      </div>
     </div>
-</main>
 
-<footer>
-    &copy; 2025 Zoubirou Mohammed Ilyes — <a href="https://orcid.org/0009-0007-7571-3178" target="_blank">ORCID</a>
-</footer>
+    <section style="margin-top:18px;" class="card">
+      <h3>Instructions rapides</h3>
+      <ol class="small">
+        <li>Cloner le dépôt : <code>git clone https://github.com/milyes/AIMEDIXAL.git</code></li>
+        <li>Extraire les livrables ou installer l'APK sur Android.</li>
+        <li>Consulter le README.md pour les détails de compilation et contribution.</li>
+      </ol>
+      <div style="margin-top:8px;" class="small"><strong>Licence :</strong> MIT — mention obligatoire de l’auteur.</div>
+    </section>
 
+    <footer>
+      <div>© 2025 Zoubirou Mohammed Ilyes — <a href="https://orcid.org/0009-0007-7571-3178" target="_blank" style="color:#dbeeff">ORCID</a></div>
+    </footer>
+  </div>
 </body>
 </html>
